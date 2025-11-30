@@ -225,7 +225,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Integrating Agglomerative Perception with One-step Action Generation for Robotic Manipulation</h1>
+            <h1 class="title is-1 publication-title"><span class="neon-letter f">F</span><span class="neon-letter l">l</span><span class="neon-letter o">o</span><span class="neon-letter w">w</span><span class="neon-letter 2">2</span><span class="neon-letter a">A</span><span class="neon-letter c">c</span><span class="neon-letter t">t</span>: Integrating Agglomerative Perception with One-step Action Generation for Robotic Manipulation</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -235,7 +235,7 @@
                   <span class="author-block">
                     <a href="https://gr.xjtu.edu.cn/web/spzhou" target="_blank">Sanping Zhou</a><sup>1</sup></sup>,</span>
                   </span>
-                    <a href="https://gr.xjtu.edu.cn/web/spzhou" target="_blank">Kun Xia</a><sup>1</sup></sup>,</span>
+                    Kun Xia</a><sup>1</sup></sup>,</span>
                   </span>
                     <a href="https://www.ganghua.org/" target="_blank">Gang Hua</a><sup>2</sup></sup>,</span>
                   </span>
@@ -436,25 +436,64 @@ We evaluate Flow2Act on challenging simulation benchmarks and real-world robotic
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Results on RLBench</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/place_shape_in_shape_sorter.mp4" type="video/mp4">
+      <div id="results-carousel" class="video-grid">
+        <div class="video-item">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/insert_usb_in_computer.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/nail.mp4" type="video/mp4">
+        <div class="video-item">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/insert_onto_square_peg.mp4" type="video/mp4">
           </video>
         </div>
-          <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+        <div class="video-item">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/meat_off_grill.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/open_drawer.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/place_shape_in_shape_sorter.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/push_buttons.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/put_item_in_drawer.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/setup_checkers.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/slide_block_to_color_target.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/stack_blocks.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata" autoplay>
+            <source src="static/videos/rlb/sweep_to_dustpan_of_size.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata" autoplay>
             <source src="static/videos/place_wine_at_rack_location-table_texture.mp4" type="video/mp4">
           </video>
         </div>
@@ -472,14 +511,42 @@ We evaluate Flow2Act on challenging simulation benchmarks and real-world robotic
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/real/hangcup.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/real/pick2drawer.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video1">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/real/Putmustard.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/real/sortshape.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video1">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/real/stackblock.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/real/Stackcups.mp4" type="video/mp4">
           </video>
         </div>
       </div>

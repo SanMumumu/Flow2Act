@@ -333,12 +333,12 @@ body {
 /* Content Improvements */
 .content.has-text-justified {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.1;
   color: var(--text-secondary);
 }
 
 .content.has-text-justified p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 /* Footer Improvements */
@@ -749,5 +749,85 @@ a:focus {
   }
 }
 
+/* Style for the container wrapping the videos */
+.video-grid {
+  display: flex; /* Enable flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow videos to wrap to the next line */
+  justify-content: center; /* Center the videos horizontally */
+  gap: 20px; /* Space between video items */
+  margin-top: 30px;
+}
 
+/* Style for each video's container */
+.video-item {
+  /* Calculate the width: 100% divided by 3 videos, minus a little for margins/gap */
+  /* This ensures up to 3 videos fit on one line */
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 300px; /* Prevent videos from getting too small on tiny screens */
+  max-width: 450px; /* Optional: cap the maximum width for very large screens */
+}
 
+/* Ensure the video element itself takes up the full width of its container */
+.video-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the videos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Title */
+.publication-title {
+  text-align: center;
+}
+
+.publication-title .neon-letter {
+  color: #6a8285;
+  text-shadow: none;
+  transition: color 0.1s ease-out, text-shadow 0.1s ease-out;
+  display: inline-block;
+  opacity: 0.7;
+
+  animation-name: letter-glow;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+@keyframes letter-glow {
+  0% {
+    color: #6a8285;
+    text-shadow: none;
+    opacity: 0.7;
+  }
+  50% {
+    color: #00e6ff;
+    text-shadow:
+      0 0 5px rgba(0, 230, 255, 0.8),
+      0 0 10px rgba(0, 230, 255, 0.6),
+      0 0 20px rgba(0, 230, 255, 0.4);
+    opacity: 1;
+  }
+  100% {
+    color: #00e6ff;
+    text-shadow:
+      0 0 5px rgba(0, 230, 255, 0.8),
+      0 0 10px rgba(0, 230, 255, 0.6),
+      0 0 20px rgba(0, 230, 255, 0.4);
+    opacity: 1;
+  }
+}
+
+.publication-title .neon-letter:nth-child(1) { animation-delay: 0s; }
+.publication-title .neon-letter:nth-child(2) { animation-delay: 0.1s; }
+.publication-title .neon-letter:nth-child(3) { animation-delay: 0.2s; }
+.publication-title .neon-letter:nth-child(4) { animation-delay: 0.3s; }
+.publication-title .neon-letter:nth-child(5) { animation-delay: 0.4s; } /* '2' */
+.publication-title .neon-letter:nth-child(6) { animation-delay: 0.5s; } /* 'A' */
+.publication-title .neon-letter:nth-child(7) { animation-delay: 0.6s; } /* 'c' */
+.publication-title .neon-letter:nth-child(8) { animation-delay: 0.7s; } /* 't' */
+
+.publication-title {
+    color: #fff;
+}
