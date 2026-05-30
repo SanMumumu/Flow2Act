@@ -580,6 +580,67 @@ We evaluate Flow2Act on challenging simulation benchmarks and real-world robotic
 
 
 
+<!-- Failure Cases -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Failure Cases</h2>
+      <p style="margin-bottom: 1.5rem;">
+        We analyze all 95 failed trials in the real-world Generalization Setting. Three primary failure causes are identified:
+        <strong>severe occlusion during local refinement</strong> (43/95, 45.3%),
+        <strong>depth sensor artifact or missing point cloud</strong> (28/95, 29.5%), and
+        <strong>kinematic singularity or planner-level reachability issue</strong> (24/95, 25.3%).
+      </p>
+      <div id="failure-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_black_ring.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Grasp Black Ring (Failed)</h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_novel_view.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Novel View Generalization (Failed)</h2>
+        </div>
+        <div class="item item-video1">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_stack_blocks.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Stack Blocks Novel View (Failed)</h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_static_3blocks.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Stack 3 Blocks (Failed)</h2>
+        </div>
+        <div class="item item-video1">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_general.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Manipulation Failure</h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_banana.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Grab Banana Novel View (Failed)</h2>
+        </div>
+        <div class="item item-video1">
+          <video poster="" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/fail/fail_vid.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top:0.5rem;">Real-World Failure Demo</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Failure Cases -->
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
